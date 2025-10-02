@@ -66,7 +66,7 @@
       <section class="main-title">
         <div class="container">
           <h1 class="main-heading">Effective Solutions for Your Business</h1>
-          <button type="button" class="button">Order Service</button>
+          <button type="button" class="button-hero">Order Service</button>
         </div>
       </section>
 
@@ -469,18 +469,33 @@
             </li>
           </ul>
         </div>
+        <div class="subscrybe-footer">
+          <p class="text-section">Subscribe</p>
+          <form class="form-footer">
+            <label class="label-footer"
+              ><input type="email" class="input-footer" placeholder="E-mail"
+            /></label>
+            <button class="subscribe-button">
+              Subscribe
+              <svg class="footer-button-icons" width="24" height="20">
+                <use href="./images/icons.svg#icon-send"></use>
+              </svg>
+            </button>
+          </form>
+        </div>
       </div>
-      <!-- MODAL WINDOW -->
-      <div class="backdrop">
-        <div class="modal">
-          <p class="modal-text">
-            Leave your contacts and we will call you back
-          </p>
-          <button type="button" class="close-button">
-            <svg class="button-icons-close" width="8" height="8">
-              <use href="./images/icons.svg#icon-close-black"></use>
-            </svg>
-          </button>
+    </footer>
+
+    <!-- MODAL WINDOW -->
+    <div class="backdrop">
+      <div class="modal">
+        <p class="modal-text">Leave your contacts and we will call you back</p>
+        <button type="button" class="close-button">
+          <svg class="button-icons-close" width="8" height="8">
+            <use href="./images/icons.svg#icon-close-black"></use>
+          </svg>
+        </button>
+        <form class="form-user-information">
           <fieldset class="user-information">
             <div class="user-information-wrapper">
               <label class="modal-label" for="name">Name</label>
@@ -535,8 +550,8 @@
             </span>
           </label>
           <button class="send-button" type="submit">Send</button>
-        </div>
+        </form>
       </div>
-    </footer>
+    </div>
   </body>
 </html>

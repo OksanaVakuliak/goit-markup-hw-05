@@ -31,6 +31,10 @@ p {
   margin: 0;
   padding: 0;
 }
+button {
+  font-family: inherit;
+  color: currentColor;
+}
 /* HEADER */
 .header {
   border-bottom: 1px solid #e7e9fc;
@@ -161,7 +165,7 @@ ul {
   letter-spacing: 0.02em;
   color: #ffffff;
 }
-.button {
+.button-hero {
   display: block;
   min-width: 169px;
   margin-left: auto;
@@ -180,8 +184,8 @@ ul {
   cursor: pointer;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.button:hover,
-.button:focus {
+.button-hero:hover,
+.button-hero:focus {
   background-color: #404bbf;
 }
 /* FIRS SECTION*/
@@ -408,6 +412,7 @@ ul {
 .footer-flexbox {
   display: flex;
   align-items: baseline;
+  justify-content: space-between;
 }
 .logo-footer {
   display: inline-block;
@@ -434,7 +439,6 @@ ul {
   display: flex;
   flex-direction: column;
   margin: 0;
-  margin-right: 120px;
 }
 .social-icons-footer {
   display: flex;
@@ -472,6 +476,53 @@ ul {
   gap: 16px;
   justify-content: flex-start;
   margin: 0;
+}
+.subscrybe-footer .text-section {
+  margin-bottom: 16px;
+  font-weight: 500;
+  color: #fff;
+}
+.form-footer {
+  display: flex;
+  gap: 24px;
+  align-items: center;
+}
+.input-footer {
+  border: 1px solid #fff;
+  border-radius: 4px;
+  width: 264px;
+  height: 40px;
+  background-color: #2e2f42;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+  padding-left: 16px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  color: #fff;
+}
+.input-footer::placeholder {
+  font-size: 12px;
+  line-height: 2;
+  letter-spacing: 0.04em;
+  color: #fff;
+}
+.subscribe-button {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  border-radius: 4px;
+  padding: 8px 24px;
+  min-width: 165px;
+  height: 40px;
+  background-color: #4d5ae5;
+  border: none;
+  cursor: pointer;
+  font-weight: 500;
+  letter-spacing: 0.04em;
+  text-align: center;
+  color: #fff;
+}
+.footer-button-icons {
+  fill: #fff;
 }
 
 /* MODAL WINDOW */
@@ -536,6 +587,11 @@ ul {
   text-align: center;
   color: #2e2f42;
   margin-bottom: 16px;
+}
+.form-user-information {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 24px;
 }
 .modal-label {
   position: relative;
@@ -644,7 +700,7 @@ ul {
 .send-button {
   border-radius: 4px;
   padding: 16px 32px;
-  width: 169px;
+  min-width: 169px;
   height: 56px;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
   background: #4d5ae5;
@@ -656,7 +712,6 @@ ul {
   color: #fff;
   cursor: pointer;
   border: none;
-  margin-bottom: 24px;
   margin-left: auto;
   margin-right: auto;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
