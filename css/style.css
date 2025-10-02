@@ -717,7 +717,7 @@ ul {
 .checkbox-icons {
   fill: transparent;
 }
-.modal-checkbox:focus + .policy-text {
+.modal-checkbox:focus + .policy-text .icon-policy {
   border-color: #404bbf;
 }
 .modal-checkbox:checked + .policy-text .icon-policy {
