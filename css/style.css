@@ -720,8 +720,8 @@ ul {
   border-color: #404bbf;
 }
 .modal-checkbox:checked + .policy-text .icon-policy {
-  background-color: #4d5ae5;
-  border-color: #4d5ae5;
+  background-color: #404bbf;
+  border: none;
 }
 .modal-checkbox:checked + .policy-text .icon-policy {
   fill: #f4f4fd;
